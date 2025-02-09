@@ -155,23 +155,19 @@
             <!-- Wallet Section -->
             <section id="wallet" class="page-section">
                 <div class="wallet-header">
-                    <h1>Wallet</h1>
+                    <h1>Connect Wallet</h1>
                 </div>
 
                 <div class="wallet-container">
                     <p class="wallet-message">Please connect your wallet</p>
                     <div id="connect-container"></div>
                     
-                    <!-- Airdrop Task -->
-                    <div class="task-item airdrop-task">
-                        <div class="task-icon">
-                            <img src="./assets/flogo.svg" alt="FLOX Logo" class="task-icon-img">
+                    <!-- Bağlantı sonrası gösterilecek bilgiler -->
+                    <div class="wallet-info" style="display: none;">
+                        <div class="balance-info">
+                            <span class="label">Balance:</span>
+                            <span class="value">0 TON</span>
                         </div>
-                        <div class="task-content">
-                            <div class="task-title">Verify for $FLOX airdrop</div>
-                            <div class="task-points">220</div>
-                        </div>
-                        <div class="task-arrow">→</div>
                     </div>
                 </div>
             </section>
@@ -179,19 +175,19 @@
 
         <!-- Bottom Navigation -->
         <nav class="bottom-nav">
-            <a href="#main" class="nav-item active">
+            <a href="#main" class="nav-item active" data-page="main">
                 <i class="fas fa-home"></i>
                 <span>Main</span>
             </a>
-            <a href="#tasks" class="nav-item">
+            <a href="#tasks" class="nav-item" data-page="tasks">
                 <i class="fas fa-tasks"></i>
                 <span>Tasks</span>
             </a>
-            <a href="#friends" class="nav-item">
+            <a href="#friends" class="nav-item" data-page="friends">
                 <i class="fas fa-users"></i>
                 <span>Friends</span>
             </a>
-            <a href="#wallet" class="nav-item">
+            <a href="#wallet" class="nav-item" data-page="wallet">
                 <i class="fas fa-wallet"></i>
                 <span>Wallet</span>
             </a>
