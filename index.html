@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome için CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://unpkg.com/@tonconnect/sdk@2.1.3/dist/tonconnect-sdk.min.js"></script>
-    <script src="https://unpkg.com/@tonconnect/ui@1.0.0/dist/tonconnect-ui.min.js"></script>
+    
+    <!-- TON Connect SDK'ları - Sıralama önemli -->
+    <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -160,6 +162,7 @@
 
                 <div class="wallet-container">
                     <p class="wallet-message">Please connect your wallet</p>
+                    <!-- TON Connect butonu için container -->
                     <div id="connect-container"></div>
                     
                     <!-- Bağlantı sonrası gösterilecek bilgiler -->
@@ -195,5 +198,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/wallet.js"></script>
 </body>
 </html>
