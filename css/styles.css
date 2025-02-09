@@ -994,49 +994,35 @@ body::before {
     margin-bottom: 20px;
 }
 
-/* TON Connect butonu için stiller */
-.ton-connect-button {
-    background: var(--accent-color) !important;
-    border-radius: 12px !important;
-    padding: 12px 24px !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    margin-top: 20px !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease !important;
-}
-
-.ton-connect-button:hover {
-    opacity: 0.9 !important;
-    transform: translateY(-2px) !important;
-}
-
-#connect-container {
+/* Connect Wallet butonu için stiller */
+.connect-wallet-btn {
+    background: var(--accent-color);
+    border: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin: 20px 0;
 }
 
-.wallet-info {
-    display: none;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 20px;
+.connect-wallet-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
 }
 
-.balance-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-}
-
-.balance-info .label {
-    color: var(--text-secondary);
-}
-
-.balance-info .value {
-    color: var(--accent-color);
-    font-weight: 600;
+.connect-wallet-btn img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Panda maskotu ekleme */
@@ -1519,7 +1505,24 @@ body::before {
 }
 
 #connect-container {
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* TON Connect buton stilleri */
+.ton-connect-button {
+    background: var(--accent-color) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 16px 32px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    cursor: pointer !important;
+    width: 100% !important;
 }
 
 @keyframes fadeIn {
